@@ -1,6 +1,32 @@
-@Boren.MiniAPI.WebApplication_HostAddress = http://localhost:5158
+@Boren.MiniAPI.WebApplication_HostAddress = https://localhost:7021
 
-GET {{Boren.MiniAPI.WebApplication_HostAddress}}/weatherforecast/
+GET {{Boren.MiniAPI.WebApplication_HostAddress}}/todoitems/1
 Accept: application/json
+
+###
+
+POST {{Boren.MiniAPI.WebApplication_HostAddress}}/todoitems
+Content-Type: application/json
+
+{
+  "name":"walk dog",
+  "isComplete":true
+}
+###
+
+PUT {{Boren.MiniAPI.WebApplication_HostAddress}}/todoitems/1
+Content-Type:application/json
+
+{
+  "name": "feed fish",
+  "isComplete": false
+}
+###
+
+GET {{Boren.MiniAPI.WebApplication_HostAddress}}/students/
+
+###
+
+GET {{Boren.MiniAPI.WebApplication_HostAddress}}/students/
 
 ###
